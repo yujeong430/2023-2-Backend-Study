@@ -88,7 +88,7 @@ HTTPS는 대칭키 암호화 방식과 비대칭키 암호화 방식을 모두 �
 
 ## RESTful한 URI 설계
 - 이벤트 목록 조회   
-    GET /eventList
+    GET /event-list
 - 이벤트 조회   
     GET /event
 - 이벤트 등록   
@@ -100,14 +100,14 @@ HTTPS는 대칭키 암호화 방식과 비대칭키 암호화 방식을 모두 �
 - 이벤트 상태 변경   
     PUT /event/state
 - 특정 이벤트의 주문 목록 조회   
-    GET /events/{id}/orderList
+    GET /event/{eventid}/order-list
 - 멤버 목록 조회   
-    GET /memberList
+    GET /member-list
 - 특정 멤버 권한 변경   
-    PUT /members/{memberId}/authority
+    PUT /member/{memberid}/authority
 - 특정 멤버 정보 조회   
-    GET /members/{memberId}/info
+    GET /member/{memberid}/info
 - 특정 멤버 정보 변경   
-    PUT /members/{memberId}/info
+    PUT /member/{memberid}/info
 - 멤버 등록   
-    POST /members
+    POST /member/{memberid}
